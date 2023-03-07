@@ -1,0 +1,4 @@
+encryptionsalt: v1:nd5G1ZumRIM=:v1:48zhY4n/9aIHqaQa:Uuk6dthnGQzNQzq4dl6UQF2Y7OHtTA==
+config:
+  gcp:project: arbo-development
+  pulumi-example:project: arbo-development
