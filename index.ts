@@ -15,7 +15,7 @@ const pubsubTopic2 = new gcp.pubsub.Topic('test-topic-2', {
 const svc_acct_name_1 = "test-service-account";
 const svc_acct_name_2 = "test-service-account-2";
 
-const svcAcct = gcp.serviceaccount.Account.get('test-service-account', `${svc_acct_name_1}@${project}.iam.gserviceaccount.com`,undefined, {dependsOn: [pubsubTopic2]});
+const svcAcct = gcp.serviceaccount.Account.get('test-service-account', `${svc_acct_name_2}@${project}.iam.gserviceaccount.com`,undefined, {dependsOn: [pubsubTopic2]});
 
 const iamBinding1 = new gcp.pubsub.TopicIAMBinding("test-iam-binding-1", {
     topic: pubsubTopic.name,
