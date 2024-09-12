@@ -3,7 +3,7 @@ import * as gcp from "@pulumi/gcp";
 
 
 
-const pubsub1 = new gcp.pubsub.Topic("test-topic1", {name: 'test-topic1'});
+const pubsub1 = new gcp.pubsub.Topic("test-topic11", {name: 'test-topic1'});
 const pubsub2 = new gcp.pubsub.Topic("test-topic2", {name: 'test-topic2'});
 
 
