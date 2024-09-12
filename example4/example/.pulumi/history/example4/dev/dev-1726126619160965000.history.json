@@ -1,0 +1,36 @@
+{
+    "kind": "update",
+    "startTime": 1726126605,
+    "message": "repro",
+    "environment": {
+        "exec.kind": "cli",
+        "git.author": "weihan",
+        "git.author.email": "weihan@artafinance.com",
+        "git.committer": "weihan",
+        "git.committer.email": "weihan@artafinance.com",
+        "git.dirty": "true",
+        "git.head": "073d7b504924e30a40c53a3fdbdd9d5d380dc96b",
+        "git.headName": "refs/heads/master",
+        "pulumi.arch": "arm64",
+        "pulumi.os": "darwin",
+        "pulumi.version": "v3.120.0",
+        "updatePlan": "false",
+        "vcs.kind": "github.com",
+        "vcs.owner": "zweihan",
+        "vcs.repo": "pulumi-example",
+        "vcs.root": "example4/example"
+    },
+    "config": {
+        "gcp:project": "test-arboforming-18",
+        "pulumi:tags": {
+            "pulumi:template": "gcp-typescript"
+        }
+    },
+    "version": 0,
+    "result": "succeeded",
+    "endTime": 1726126619,
+    "resourceChanges": {
+        "create": 1,
+        "same": 4
+    }
+}

@@ -1,0 +1,312 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/example4/dev",
+        "latest": {
+            "manifest": {
+                "time": "2024-09-12T15:15:16.427242+08:00",
+                "magic": "26455f4e783faab27da6c6ee2e252716b1c84e7f67777a274faa7d2452f68cf7",
+                "version": "v3.120.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:jVfS/tGlhFw=:v1:Hhxzwmya/de1reN7:zg/QpFjIEjHbCiiQLeXCsJSy2CUHKw=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:dev::example4::pulumi:pulumi:Stack::example4-dev",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "created": "2024-09-12T04:21:05.081396Z",
+                    "modified": "2024-09-12T04:21:05.081396Z",
+                    "sourcePosition": "project:///node_modules/@pulumi/runtime/stack.ts#38,23"
+                },
+                {
+                    "urn": "urn:pulumi:dev::example4::pulumi:providers:gcp::default_7_38_0",
+                    "custom": true,
+                    "id": "1723d400-47d8-4155-a721-cf1e215e879b",
+                    "type": "pulumi:providers:gcp",
+                    "inputs": {
+                        "project": "test-arboforming-18",
+                        "version": "7.38.0"
+                    },
+                    "outputs": {
+                        "project": "test-arboforming-18",
+                        "version": "7.38.0"
+                    },
+                    "created": "2024-09-12T04:21:06.351809Z",
+                    "modified": "2024-09-12T04:21:06.351809Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::example4::gcp:pubsub/topic:Topic::test-topic1",
+                    "custom": true,
+                    "id": "projects/test-arboforming-18/topics/test-topic1",
+                    "type": "gcp:pubsub/topic:Topic",
+                    "inputs": {
+                        "__defaults": [],
+                        "name": "test-topic1"
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":1200000000000,\"delete\":1200000000000,\"update\":1200000000000}}",
+                        "effectiveLabels": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:xE2uMaCa1QYuXeCg:EBIq3AtnyNQQuI15S7q4hGfA"
+                        },
+                        "id": "projects/test-arboforming-18/topics/test-topic1",
+                        "ingestionDataSourceSettings": null,
+                        "kmsKeyName": "",
+                        "labels": null,
+                        "messageRetentionDuration": "",
+                        "messageStoragePolicy": null,
+                        "name": "test-topic1",
+                        "project": "test-arboforming-18",
+                        "pulumiLabels": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:BBx2S5wAR9GuJeQf:SNgRunn3tqHae3S0pfj+0ij2"
+                        },
+                        "schemaSettings": null
+                    },
+                    "parent": "urn:pulumi:dev::example4::pulumi:pulumi:Stack::example4-dev",
+                    "provider": "urn:pulumi:dev::example4::pulumi:providers:gcp::default_7_38_0::1723d400-47d8-4155-a721-cf1e215e879b",
+                    "propertyDependencies": {
+                        "name": []
+                    },
+                    "additionalSecretOutputs": [
+                        "effectiveLabels",
+                        "pulumiLabels"
+                    ],
+                    "created": "2024-09-12T04:21:16.249732Z",
+                    "modified": "2024-09-12T04:21:16.249732Z",
+                    "sourcePosition": "project:///index.ts#4,16"
+                },
+                {
+                    "urn": "urn:pulumi:dev::example4::gcp:pubsub/topic:Topic::test-topic2",
+                    "custom": true,
+                    "id": "projects/test-arboforming-18/topics/test-topic2",
+                    "type": "gcp:pubsub/topic:Topic",
+                    "inputs": {
+                        "__defaults": [],
+                        "name": "test-topic2"
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":1200000000000,\"delete\":1200000000000,\"update\":1200000000000}}",
+                        "effectiveLabels": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:nNC9DKk2JGS2WKDF:v0tPzjZYK6f9p0gkUjjvWmKY"
+                        },
+                        "id": "projects/test-arboforming-18/topics/test-topic2",
+                        "ingestionDataSourceSettings": null,
+                        "kmsKeyName": "",
+                        "labels": null,
+                        "messageRetentionDuration": "",
+                        "messageStoragePolicy": null,
+                        "name": "test-topic2",
+                        "project": "test-arboforming-18",
+                        "pulumiLabels": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:gqAw4ErCEQcJP/ND:4gDAIOWHSZjXH+Mz1L2rWCB6"
+                        },
+                        "schemaSettings": null
+                    },
+                    "parent": "urn:pulumi:dev::example4::pulumi:pulumi:Stack::example4-dev",
+                    "provider": "urn:pulumi:dev::example4::pulumi:providers:gcp::default_7_38_0::1723d400-47d8-4155-a721-cf1e215e879b",
+                    "propertyDependencies": {
+                        "name": []
+                    },
+                    "additionalSecretOutputs": [
+                        "effectiveLabels",
+                        "pulumiLabels"
+                    ],
+                    "created": "2024-09-12T04:21:16.285632Z",
+                    "modified": "2024-09-12T04:21:16.285632Z",
+                    "sourcePosition": "project:///index.ts#5,17"
+                },
+                {
+                    "urn": "urn:pulumi:dev::example4::gcp:pubsub/topic:Topic::test-topic3",
+                    "custom": true,
+                    "id": "projects/test-arboforming-18/topics/test-topic3",
+                    "type": "gcp:pubsub/topic:Topic",
+                    "inputs": {
+                        "__defaults": [],
+                        "name": "test-topic3"
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":1200000000000,\"delete\":1200000000000,\"update\":1200000000000}}",
+                        "effectiveLabels": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:DD6OcSuvb25vo/Ye:OfzQPNo6399z0dkAxdPruaVg"
+                        },
+                        "id": "projects/test-arboforming-18/topics/test-topic3",
+                        "ingestionDataSourceSettings": null,
+                        "kmsKeyName": "",
+                        "labels": null,
+                        "messageRetentionDuration": "",
+                        "messageStoragePolicy": null,
+                        "name": "test-topic3",
+                        "project": "test-arboforming-18",
+                        "pulumiLabels": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:ZerroPqLxP0LVkt4:o7ar/DeBeMoOEiZfbKT4Q5p6"
+                        },
+                        "schemaSettings": null
+                    },
+                    "parent": "urn:pulumi:dev::example4::pulumi:pulumi:Stack::example4-dev",
+                    "provider": "urn:pulumi:dev::example4::pulumi:providers:gcp::default_7_38_0::1723d400-47d8-4155-a721-cf1e215e879b",
+                    "propertyDependencies": {
+                        "name": []
+                    },
+                    "additionalSecretOutputs": [
+                        "effectiveLabels",
+                        "pulumiLabels"
+                    ],
+                    "created": "2024-09-12T04:27:10.29481Z",
+                    "modified": "2024-09-12T04:27:10.29481Z",
+                    "sourcePosition": "project:///index.ts#6,17"
+                },
+                {
+                    "urn": "urn:pulumi:dev::example4::gcp:serviceaccount/account:Account::test-sa3",
+                    "custom": true,
+                    "id": "projects/test-arboforming-18/serviceAccounts/test-sa3@test-arboforming-18.iam.gserviceaccount.com",
+                    "type": "gcp:serviceaccount/account:Account",
+                    "inputs": {
+                        "__defaults": [
+                            "disabled"
+                        ],
+                        "accountId": "test-sa3",
+                        "disabled": false
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":300000000000}}",
+                        "accountId": "test-sa3",
+                        "createIgnoreAlreadyExists": null,
+                        "description": "",
+                        "disabled": false,
+                        "displayName": "",
+                        "email": "test-sa3@test-arboforming-18.iam.gserviceaccount.com",
+                        "id": "projects/test-arboforming-18/serviceAccounts/test-sa3@test-arboforming-18.iam.gserviceaccount.com",
+                        "member": "serviceAccount:test-sa3@test-arboforming-18.iam.gserviceaccount.com",
+                        "name": "projects/test-arboforming-18/serviceAccounts/test-sa3@test-arboforming-18.iam.gserviceaccount.com",
+                        "project": "test-arboforming-18",
+                        "uniqueId": "107376003142812687711"
+                    },
+                    "parent": "urn:pulumi:dev::example4::pulumi:pulumi:Stack::example4-dev",
+                    "provider": "urn:pulumi:dev::example4::pulumi:providers:gcp::default_7_38_0::1723d400-47d8-4155-a721-cf1e215e879b",
+                    "propertyDependencies": {
+                        "accountId": []
+                    },
+                    "created": "2024-09-12T07:10:18.655399Z",
+                    "modified": "2024-09-12T07:10:18.655399Z",
+                    "sourcePosition": "project:///index.ts#13,25"
+                },
+                {
+                    "urn": "urn:pulumi:dev::example4::gcp:serviceaccount/account:Account::test-sa2",
+                    "custom": true,
+                    "id": "projects/test-arboforming-18/serviceAccounts/test-sa2@test-arboforming-18.iam.gserviceaccount.com",
+                    "type": "gcp:serviceaccount/account:Account",
+                    "inputs": {
+                        "__defaults": [
+                            "disabled"
+                        ],
+                        "accountId": "test-sa2",
+                        "disabled": false
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":300000000000}}",
+                        "accountId": "test-sa2",
+                        "createIgnoreAlreadyExists": null,
+                        "description": "",
+                        "disabled": false,
+                        "displayName": "",
+                        "email": "test-sa2@test-arboforming-18.iam.gserviceaccount.com",
+                        "id": "projects/test-arboforming-18/serviceAccounts/test-sa2@test-arboforming-18.iam.gserviceaccount.com",
+                        "member": "serviceAccount:test-sa2@test-arboforming-18.iam.gserviceaccount.com",
+                        "name": "projects/test-arboforming-18/serviceAccounts/test-sa2@test-arboforming-18.iam.gserviceaccount.com",
+                        "project": "test-arboforming-18",
+                        "uniqueId": "110251147605919733064"
+                    },
+                    "parent": "urn:pulumi:dev::example4::pulumi:pulumi:Stack::example4-dev",
+                    "provider": "urn:pulumi:dev::example4::pulumi:providers:gcp::default_7_38_0::1723d400-47d8-4155-a721-cf1e215e879b",
+                    "propertyDependencies": {
+                        "accountId": []
+                    },
+                    "created": "2024-09-12T04:27:09.849119Z",
+                    "modified": "2024-09-12T04:27:09.849119Z",
+                    "sourcePosition": "project:///index.ts#10,25"
+                },
+                {
+                    "urn": "urn:pulumi:dev::example4::gcp:serviceaccount/account:Account::test-sa1",
+                    "custom": true,
+                    "id": "projects/test-arboforming-18/serviceAccounts/test-sa1@test-arboforming-18.iam.gserviceaccount.com",
+                    "type": "gcp:serviceaccount/account:Account",
+                    "inputs": {
+                        "__defaults": [
+                            "disabled"
+                        ],
+                        "accountId": "test-sa1",
+                        "disabled": false
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":300000000000}}",
+                        "accountId": "test-sa1",
+                        "createIgnoreAlreadyExists": null,
+                        "description": "",
+                        "disabled": false,
+                        "displayName": "",
+                        "email": "test-sa1@test-arboforming-18.iam.gserviceaccount.com",
+                        "id": "projects/test-arboforming-18/serviceAccounts/test-sa1@test-arboforming-18.iam.gserviceaccount.com",
+                        "member": "serviceAccount:test-sa1@test-arboforming-18.iam.gserviceaccount.com",
+                        "name": "projects/test-arboforming-18/serviceAccounts/test-sa1@test-arboforming-18.iam.gserviceaccount.com",
+                        "project": "test-arboforming-18",
+                        "uniqueId": "100846424772188934309"
+                    },
+                    "parent": "urn:pulumi:dev::example4::pulumi:pulumi:Stack::example4-dev",
+                    "provider": "urn:pulumi:dev::example4::pulumi:providers:gcp::default_7_38_0::1723d400-47d8-4155-a721-cf1e215e879b",
+                    "propertyDependencies": {
+                        "accountId": []
+                    },
+                    "created": "2024-09-12T04:27:10.254415Z",
+                    "modified": "2024-09-12T04:27:10.254415Z",
+                    "sourcePosition": "project:///index.ts#7,25"
+                },
+                {
+                    "urn": "urn:pulumi:dev::example4::gcp:organizations/project:Project::test-arboforming-18",
+                    "custom": true,
+                    "id": "projects/test-arboforming-18",
+                    "type": "gcp:organizations/project:Project",
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":600000000000,\"read\":600000000000,\"update\":600000000000},\"schema_version\":\"1\"}",
+                        "autoCreateNetwork": true,
+                        "billingAccount": "01BEB4-26598C-DBFF16",
+                        "deletionPolicy": "DELETE",
+                        "effectiveLabels": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:dpBxYzOuW+0tWlcC:zop/fxzNUqrflXZ90gKNv28YQi4VMY8V5KQkljaRPMgdWfN+KDM="
+                        },
+                        "folderId": "679618297242",
+                        "id": "projects/test-arboforming-18",
+                        "labels": {},
+                        "name": "Test Arbo Consumer Project",
+                        "number": "128195395659",
+                        "orgId": "",
+                        "projectId": "test-arboforming-18",
+                        "pulumiLabels": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:vUTTCLdrSVCPbZoo:TFAeHzbZeDzS6yg8neGo1xmL"
+                        },
+                        "skipDelete": null
+                    },
+                    "parent": "urn:pulumi:dev::example4::pulumi:pulumi:Stack::example4-dev",
+                    "external": true,
+                    "provider": "urn:pulumi:dev::example4::pulumi:providers:gcp::default_7_38_0::1723d400-47d8-4155-a721-cf1e215e879b",
+                    "additionalSecretOutputs": [
+                        "effectiveLabels",
+                        "pulumiLabels"
+                    ],
+                    "sourcePosition": "project:///node_modules/@pulumi/organizations/project.ts#79,16"
+                }
+            ]
+        }
+    }
+}

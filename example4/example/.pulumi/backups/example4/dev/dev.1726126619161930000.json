@@ -1,0 +1,253 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/example4/dev",
+        "latest": {
+            "manifest": {
+                "time": "2024-09-12T15:36:59.159081+08:00",
+                "magic": "26455f4e783faab27da6c6ee2e252716b1c84e7f67777a274faa7d2452f68cf7",
+                "version": "v3.120.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:jVfS/tGlhFw=:v1:Hhxzwmya/de1reN7:zg/QpFjIEjHbCiiQLeXCsJSy2CUHKw=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:dev::example4::pulumi:pulumi:Stack::example4-dev",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "created": "2024-09-12T04:21:05.081396Z",
+                    "modified": "2024-09-12T04:21:05.081396Z",
+                    "sourcePosition": "project:///node_modules/@pulumi/runtime/stack.ts#38,23"
+                },
+                {
+                    "urn": "urn:pulumi:dev::example4::pulumi:providers:gcp::default_7_38_0",
+                    "custom": true,
+                    "id": "1723d400-47d8-4155-a721-cf1e215e879b",
+                    "type": "pulumi:providers:gcp",
+                    "inputs": {
+                        "project": "test-arboforming-18",
+                        "version": "7.38.0"
+                    },
+                    "outputs": {
+                        "project": "test-arboforming-18",
+                        "version": "7.38.0"
+                    },
+                    "created": "2024-09-12T04:21:06.351809Z",
+                    "modified": "2024-09-12T04:21:06.351809Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::example4::gcp:pubsub/topic:Topic::test-topic2",
+                    "custom": true,
+                    "id": "projects/test-arboforming-18/topics/test-topic2",
+                    "type": "gcp:pubsub/topic:Topic",
+                    "inputs": {
+                        "__defaults": [],
+                        "name": "test-topic2"
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":1200000000000,\"delete\":1200000000000,\"update\":1200000000000}}",
+                        "effectiveLabels": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:gS4LWulrdX5z+mvU:WqnSU3ZPrv+Iz5nq8dhBYFc2"
+                        },
+                        "id": "projects/test-arboforming-18/topics/test-topic2",
+                        "ingestionDataSourceSettings": null,
+                        "kmsKeyName": "",
+                        "labels": null,
+                        "messageRetentionDuration": "",
+                        "messageStoragePolicy": null,
+                        "name": "test-topic2",
+                        "project": "test-arboforming-18",
+                        "pulumiLabels": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:ltHwigvDqvlXkR9Z:VHaMJmsUHUoCSlf2LtUqLq8Z"
+                        },
+                        "schemaSettings": null
+                    },
+                    "parent": "urn:pulumi:dev::example4::pulumi:pulumi:Stack::example4-dev",
+                    "provider": "urn:pulumi:dev::example4::pulumi:providers:gcp::default_7_38_0::1723d400-47d8-4155-a721-cf1e215e879b",
+                    "propertyDependencies": {
+                        "name": []
+                    },
+                    "additionalSecretOutputs": [
+                        "effectiveLabels",
+                        "pulumiLabels"
+                    ],
+                    "created": "2024-09-12T07:28:45.770125Z",
+                    "modified": "2024-09-12T07:28:45.770125Z",
+                    "sourcePosition": "project:///index.ts#5,17"
+                },
+                {
+                    "urn": "urn:pulumi:dev::example4::gcp:pubsub/topic:Topic::test-topic1",
+                    "custom": true,
+                    "id": "projects/test-arboforming-18/topics/test-topic1",
+                    "type": "gcp:pubsub/topic:Topic",
+                    "inputs": {
+                        "__defaults": [],
+                        "name": "test-topic1"
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":1200000000000,\"delete\":1200000000000,\"update\":1200000000000}}",
+                        "effectiveLabels": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:b2d5xjLzMyJzO81A:zyEwm31ncRIHdjCX8rakFo+m"
+                        },
+                        "id": "projects/test-arboforming-18/topics/test-topic1",
+                        "ingestionDataSourceSettings": null,
+                        "kmsKeyName": "",
+                        "labels": null,
+                        "messageRetentionDuration": "",
+                        "messageStoragePolicy": null,
+                        "name": "test-topic1",
+                        "project": "test-arboforming-18",
+                        "pulumiLabels": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:Fd9oTa/QhatKaGVp:AaLm2+NQnZ944uiaNM1S9TGU"
+                        },
+                        "schemaSettings": null
+                    },
+                    "parent": "urn:pulumi:dev::example4::pulumi:pulumi:Stack::example4-dev",
+                    "provider": "urn:pulumi:dev::example4::pulumi:providers:gcp::default_7_38_0::1723d400-47d8-4155-a721-cf1e215e879b",
+                    "propertyDependencies": {
+                        "name": []
+                    },
+                    "additionalSecretOutputs": [
+                        "effectiveLabels",
+                        "pulumiLabels"
+                    ],
+                    "created": "2024-09-12T04:21:16.249732Z",
+                    "modified": "2024-09-12T04:21:16.249732Z",
+                    "sourcePosition": "project:///index.ts#4,17"
+                },
+                {
+                    "urn": "urn:pulumi:dev::example4::gcp:pubsub/subscription:Subscription::test-sub2",
+                    "custom": true,
+                    "id": "projects/test-arboforming-18/subscriptions/test-sub2",
+                    "type": "gcp:pubsub/subscription:Subscription",
+                    "inputs": {
+                        "__defaults": [
+                            "messageRetentionDuration"
+                        ],
+                        "messageRetentionDuration": "604800s",
+                        "name": "test-sub2",
+                        "topic": "test-topic2"
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":1200000000000,\"delete\":1200000000000,\"update\":1200000000000}}",
+                        "ackDeadlineSeconds": 10,
+                        "bigqueryConfig": null,
+                        "cloudStorageConfig": null,
+                        "deadLetterPolicy": null,
+                        "effectiveLabels": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:tc+o+XZqZug51BCE:w22KZ37J3dcjs7Yo9FaBXVr6"
+                        },
+                        "enableExactlyOnceDelivery": false,
+                        "enableMessageOrdering": false,
+                        "expirationPolicy": {
+                            "ttl": "2678400s"
+                        },
+                        "filter": "",
+                        "id": "projects/test-arboforming-18/subscriptions/test-sub2",
+                        "labels": null,
+                        "messageRetentionDuration": "604800s",
+                        "name": "test-sub2",
+                        "project": "test-arboforming-18",
+                        "pulumiLabels": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:d6b24K2WdptmVNpZ:lhu6zQbQsOLZYUftR2pB+cJk"
+                        },
+                        "pushConfig": null,
+                        "retainAckedMessages": false,
+                        "retryPolicy": null,
+                        "topic": "projects/test-arboforming-18/topics/test-topic2"
+                    },
+                    "parent": "urn:pulumi:dev::example4::pulumi:pulumi:Stack::example4-dev",
+                    "dependencies": [
+                        "urn:pulumi:dev::example4::gcp:pubsub/topic:Topic::test-topic2"
+                    ],
+                    "provider": "urn:pulumi:dev::example4::pulumi:providers:gcp::default_7_38_0::1723d400-47d8-4155-a721-cf1e215e879b",
+                    "propertyDependencies": {
+                        "name": [],
+                        "topic": [
+                            "urn:pulumi:dev::example4::gcp:pubsub/topic:Topic::test-topic2"
+                        ]
+                    },
+                    "additionalSecretOutputs": [
+                        "effectiveLabels",
+                        "pulumiLabels"
+                    ],
+                    "created": "2024-09-12T07:30:56.909726Z",
+                    "modified": "2024-09-12T07:30:56.909726Z",
+                    "sourcePosition": "project:///index.ts#10,14"
+                },
+                {
+                    "urn": "urn:pulumi:dev::example4::gcp:pubsub/subscription:Subscription::test-sub1",
+                    "custom": true,
+                    "id": "projects/test-arboforming-18/subscriptions/test-sub1",
+                    "type": "gcp:pubsub/subscription:Subscription",
+                    "inputs": {
+                        "__defaults": [
+                            "messageRetentionDuration"
+                        ],
+                        "messageRetentionDuration": "604800s",
+                        "name": "test-sub1",
+                        "topic": "test-topic1"
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":1200000000000,\"delete\":1200000000000,\"update\":1200000000000}}",
+                        "ackDeadlineSeconds": 10,
+                        "bigqueryConfig": null,
+                        "cloudStorageConfig": null,
+                        "deadLetterPolicy": null,
+                        "effectiveLabels": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:yAURjiKW0FYlrGB2:vBgqsb5ZJWu/uz3NA3/luXzF"
+                        },
+                        "enableExactlyOnceDelivery": false,
+                        "enableMessageOrdering": false,
+                        "expirationPolicy": {
+                            "ttl": "2678400s"
+                        },
+                        "filter": "",
+                        "id": "projects/test-arboforming-18/subscriptions/test-sub1",
+                        "labels": null,
+                        "messageRetentionDuration": "604800s",
+                        "name": "test-sub1",
+                        "project": "test-arboforming-18",
+                        "pulumiLabels": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:5rW0UJkBlDz7Na5s:dNOj0EZ4GK/EuBDpu8M/wYd8"
+                        },
+                        "pushConfig": null,
+                        "retainAckedMessages": false,
+                        "retryPolicy": null,
+                        "topic": "projects/test-arboforming-18/topics/test-topic1"
+                    },
+                    "parent": "urn:pulumi:dev::example4::pulumi:pulumi:Stack::example4-dev",
+                    "dependencies": [
+                        "urn:pulumi:dev::example4::gcp:pubsub/topic:Topic::test-topic1"
+                    ],
+                    "provider": "urn:pulumi:dev::example4::pulumi:providers:gcp::default_7_38_0::1723d400-47d8-4155-a721-cf1e215e879b",
+                    "propertyDependencies": {
+                        "name": [],
+                        "topic": [
+                            "urn:pulumi:dev::example4::gcp:pubsub/topic:Topic::test-topic1"
+                        ]
+                    },
+                    "additionalSecretOutputs": [
+                        "effectiveLabels",
+                        "pulumiLabels"
+                    ],
+                    "created": "2024-09-12T07:36:59.121863Z",
+                    "modified": "2024-09-12T07:36:59.121863Z",
+                    "sourcePosition": "project:///index.ts#6,14"
+                }
+            ]
+        }
+    }
+}

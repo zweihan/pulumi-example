@@ -1,0 +1,129 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/example4/dev",
+        "latest": {
+            "manifest": {
+                "time": "2024-09-12T12:21:16.298033+08:00",
+                "magic": "26455f4e783faab27da6c6ee2e252716b1c84e7f67777a274faa7d2452f68cf7",
+                "version": "v3.120.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:jVfS/tGlhFw=:v1:Hhxzwmya/de1reN7:zg/QpFjIEjHbCiiQLeXCsJSy2CUHKw=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:dev::example4::pulumi:pulumi:Stack::example4-dev",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "created": "2024-09-12T04:21:05.081396Z",
+                    "modified": "2024-09-12T04:21:05.081396Z",
+                    "sourcePosition": "project:///node_modules/@pulumi/runtime/stack.ts#38,23"
+                },
+                {
+                    "urn": "urn:pulumi:dev::example4::pulumi:providers:gcp::default_7_38_0",
+                    "custom": true,
+                    "id": "1723d400-47d8-4155-a721-cf1e215e879b",
+                    "type": "pulumi:providers:gcp",
+                    "inputs": {
+                        "project": "test-arboforming-18",
+                        "version": "7.38.0"
+                    },
+                    "outputs": {
+                        "project": "test-arboforming-18",
+                        "version": "7.38.0"
+                    },
+                    "created": "2024-09-12T04:21:06.351809Z",
+                    "modified": "2024-09-12T04:21:06.351809Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::example4::gcp:pubsub/topic:Topic::test-topic1",
+                    "custom": true,
+                    "id": "projects/test-arboforming-18/topics/test-topic1",
+                    "type": "gcp:pubsub/topic:Topic",
+                    "inputs": {
+                        "__defaults": [],
+                        "name": "test-topic1"
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":1200000000000,\"delete\":1200000000000,\"update\":1200000000000}}",
+                        "effectiveLabels": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:uFcvdrWwJjQq3V53:F/wUVHA+4cyfbi3jfhuHdINU"
+                        },
+                        "id": "projects/test-arboforming-18/topics/test-topic1",
+                        "ingestionDataSourceSettings": null,
+                        "kmsKeyName": "",
+                        "labels": null,
+                        "messageRetentionDuration": "",
+                        "messageStoragePolicy": null,
+                        "name": "test-topic1",
+                        "project": "test-arboforming-18",
+                        "pulumiLabels": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:/VIYHbAyIPF1DyPG:WZ+mzsbs8YUs8I6JQ5mSnfsM"
+                        },
+                        "schemaSettings": null
+                    },
+                    "parent": "urn:pulumi:dev::example4::pulumi:pulumi:Stack::example4-dev",
+                    "provider": "urn:pulumi:dev::example4::pulumi:providers:gcp::default_7_38_0::1723d400-47d8-4155-a721-cf1e215e879b",
+                    "propertyDependencies": {
+                        "name": []
+                    },
+                    "additionalSecretOutputs": [
+                        "effectiveLabels",
+                        "pulumiLabels"
+                    ],
+                    "created": "2024-09-12T04:21:16.249732Z",
+                    "modified": "2024-09-12T04:21:16.249732Z",
+                    "sourcePosition": "project:///index.ts#4,16"
+                },
+                {
+                    "urn": "urn:pulumi:dev::example4::gcp:pubsub/topic:Topic::test-topic2",
+                    "custom": true,
+                    "id": "projects/test-arboforming-18/topics/test-topic2",
+                    "type": "gcp:pubsub/topic:Topic",
+                    "inputs": {
+                        "__defaults": [],
+                        "name": "test-topic2"
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":1200000000000,\"delete\":1200000000000,\"update\":1200000000000}}",
+                        "effectiveLabels": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:ZDCe1DPuCvXBZn0O:TPV8xhbtmPtihvxP234+JBny"
+                        },
+                        "id": "projects/test-arboforming-18/topics/test-topic2",
+                        "ingestionDataSourceSettings": null,
+                        "kmsKeyName": "",
+                        "labels": null,
+                        "messageRetentionDuration": "",
+                        "messageStoragePolicy": null,
+                        "name": "test-topic2",
+                        "project": "test-arboforming-18",
+                        "pulumiLabels": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:I8x0qiPsh64dZG1p:+rCqkGSCf06OovQFVnnx+UTd"
+                        },
+                        "schemaSettings": null
+                    },
+                    "parent": "urn:pulumi:dev::example4::pulumi:pulumi:Stack::example4-dev",
+                    "provider": "urn:pulumi:dev::example4::pulumi:providers:gcp::default_7_38_0::1723d400-47d8-4155-a721-cf1e215e879b",
+                    "propertyDependencies": {
+                        "name": []
+                    },
+                    "additionalSecretOutputs": [
+                        "effectiveLabels",
+                        "pulumiLabels"
+                    ],
+                    "created": "2024-09-12T04:21:16.285632Z",
+                    "modified": "2024-09-12T04:21:16.285632Z",
+                    "sourcePosition": "project:///index.ts#5,17"
+                }
+            ]
+        }
+    }
+}
